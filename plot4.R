@@ -27,10 +27,10 @@ plot(desiredPowerData$DateTime, desiredPowerData$Global_active_power, type = "l"
 
 plot(desiredPowerData$DateTime, desiredPowerData$Voltage, type = "l", xlab = "datetime", ylab = "Voltage" ) 
 
-plot(desiredPowerData$DateTime, desiredPowerData$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
+plot(desiredPowerData$DateTime, desiredPowerData$Sub_metering_1, type = "l", col = "black", xlab = "", ylab = "Energy sub metering")
 lines(desiredPowerData$DateTime, desiredPowerData$Sub_metering_2, type = "l", col = "red")
 lines(desiredPowerData$DateTime, desiredPowerData$Sub_metering_3, type = "l", col = "blue")
-legend("topright",legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n")
+legend("topright",legend= c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lwd =1, bty ="n")
 
 plot(desiredPowerData$DateTime, desiredPowerData$Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global_reactive_power" ) 
 
